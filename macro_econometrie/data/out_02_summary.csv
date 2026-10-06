@@ -1,0 +1,17 @@
+region,outcome,shock,h=0,h=12,h=24
+Fed,Yield 1y (pp),MP,+0.06*,+0.13,+0.18
+Fed,Yield 1y (pp),CBI,+0.04*,+0.25*,+0.26*
+Fed,IP,MP,+0.08,+0.15,+0.06
+Fed,IP,CBI,+0.04,+0.14,+0.03
+Fed,CPI,MP,+0.01,-0.04,-0.05
+Fed,CPI,CBI,+0.04*,+0.16,+0.18
+Fed,Stocks,MP,-1.13*,-1.05,+1.14
+Fed,Stocks,CBI,+0.31,+0.65,+0.22
+ECB,Yield 2y (pp),MP,+0.03*,+0.06,+0.08
+ECB,Yield 2y (pp),CBI,+0.05*,+0.10,+0.14
+ECB,IP,MP,-0.51*,-0.85*,-0.35
+ECB,IP,CBI,+0.16,+0.06,+0.03
+ECB,HICP,MP,-0.00,-0.04,+0.05
+ECB,HICP,CBI,+0.03,-0.00,+0.01
+ECB,Stocks,MP,-0.68,+2.04*,+2.74*
+ECB,Stocks,CBI,+1.25*,+1.57,+0.80

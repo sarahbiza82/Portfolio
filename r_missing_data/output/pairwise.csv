@@ -1,0 +1,3 @@
+mechanism,PCA better than MICE (pmm),Mean better than MICE (pmm),Mean better than PCA
+MAR,0.667,0.757,0.62
+MCAR,0.64,0.707,0.527

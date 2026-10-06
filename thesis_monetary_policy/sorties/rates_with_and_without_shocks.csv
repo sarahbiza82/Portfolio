@@ -1,0 +1,7 @@
+index,specification,ECB rate (lag 2),Fed rate,R2
+CAC 40,rates only,-0.90***,+0.45**,0.039
+CAC 40,rates and shocks,-0.76**,+0.30,0.13
+S&P 500,rates only,-0.61*,+0.24,0.027
+S&P 500,rates and shocks,-0.59*,+0.19,0.112
+Nasdaq 100,rates only,-0.70,-0.03,0.03
+Nasdaq 100,rates and shocks,-0.78*,-0.02,0.117

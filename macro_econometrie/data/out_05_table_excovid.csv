@@ -1,0 +1,4 @@
+,AR1 RMSE,n,mean,Bridge-ESI,Ridge-all,Factor,Pool
+end of month 1,0.539,57,0.93*,0.93,0.88,0.89,0.89
+end of month 2,0.539,57,0.93*,0.94,0.89,0.91,0.91
+end of month 3,0.539,57,0.93*,0.92,0.90,0.90,0.90

@@ -1,0 +1,4 @@
+series,ADF statistic,ADF p (H0: unit root),KPSS statistic,KPSS p (H0: stationarity)
+ECB rate (lag 2),-2.88,0.048 (rejected),1.06,0.010 (rejected)
+Fed rate,-3.54,0.007 (rejected),0.41,0.074 (rejected)
+US unemployment rate,-2.95,0.040 (rejected),0.44,0.061 (rejected)

@@ -1,0 +1,11 @@
+mechanism,method,share
+MAR,Mean,0.503
+MAR,PCA,0.277
+MAR,MICE (pmm),0.167
+MAR,MICE (norm),0.027
+MAR,Median,0.027
+MCAR,Mean,0.327
+MCAR,PCA,0.327
+MCAR,MICE (pmm),0.193
+MCAR,Median,0.11
+MCAR,MICE (norm),0.043

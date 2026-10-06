@@ -1,0 +1,4 @@
+index,N,R2,normality (Jarque-Bera),functional form (RESET),homoskedasticity (Breusch-Pagan),no serial correlation (Breusch-Godfrey),no ARCH effects (ARCH-LM),max VIF,max Cook distance,excess kurtosis of residuals
+CAC 40,297,0.502,0.088 (rejected),0.176 (not rejected),0.055 (rejected),0.025 (rejected),0.001 (rejected),4.21,0.151,0.54
+S&P 500,297,0.608,0.000 (rejected),0.618 (not rejected),0.000 (rejected),0.111 (not rejected),0.000 (rejected),4.21,0.142,0.86
+Nasdaq 100,297,0.426,0.000 (rejected),0.036 (rejected),0.000 (rejected),0.322 (not rejected),0.000 (rejected),4.21,0.056,2.65

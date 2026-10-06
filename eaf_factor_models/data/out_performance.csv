@@ -1,0 +1,9 @@
+,,mean excess return (%/month),volatility (%/month),annualised Sharpe,worst month (%)
+Full sample,Food Products,0.58,4.32,0.46,-18.36
+Full sample,Insurance,0.63,5.51,0.4,-26.96
+2007-12 to 2009-06,Food Products,-0.83,5.55,-0.52,-11.06
+2007-12 to 2009-06,Insurance,-3.5,11.12,-1.09,-26.96
+2020-02 to 2020-04,Food Products,-1.72,9.3,-0.64,-9.43
+2020-02 to 2020-04,Insurance,-3.35,13.32,-0.87,-12.89
+2022,Food Products,0.56,4.6,0.42,-7.92
+2022,Insurance,0.62,4.93,0.44,-4.66

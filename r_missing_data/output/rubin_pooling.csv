@@ -1,0 +1,4 @@
+term,complete_est,complete_se,listwise_est,listwise_se,pooled_est,pooled_se
+(Intercept),-44.198,21.53,-50.055,31.51,-50.188,23.516
+ESG,1.791,0.884,1.409,1.251,1.449,0.905
+BETA,28.046,15.758,42.779,23.553,38.936,18.113

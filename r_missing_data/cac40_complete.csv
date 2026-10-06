@@ -1,0 +1,41 @@
+Entreprise,SECTEUR,CAPITALISATION,ANNEE,RENDEMENT,CA,VOLUME,PER,BETA,ESG,DETTE
+Accor,Hôtellerie / Tourisme,très faible,[50 – 100],6.192,5.610,185.71,13.400,1.070,19.060,3.730
+Air Liquide,Industrie / Construction / Matériaux,élevé,[100 – 150],3.913,27.060,189.21,23.200,0.700,13.040,12.440
+Airbus,Défense / Aéronautique,élevé,[50 – 100],53.810,69.230,325.48,32.620,1.210,17.050,11.270
+ArcelorMittal,Industrie / Construction / Matériaux,faible,< 50,32.553,60.270,641.92,11.810,1.710,28.050,11.110
+AXA,Banque / Assurance / Services financiers,élevé,> 200,17.695,91.260,1123.37,12.270,1.070,13.090,62.140
+BNP Paribas,Banque / Assurance / Services financiers,élevé,[150 – 200],33.703,45.730,781.72,8.270,1.310,12.030,379.890
+Bouygues,Industrie / Construction / Matériaux,très faible,[50 – 100],34.362,56.790,228.09,13.870,0.780,31.600,14.740
+Bureau Veritas,Services,très faible,[150 – 200],-7.660,6.440,283.48,18.830,0.750,10.100,2.870
+Capgemini,Technologies / Télécommunication,moyen,[50 – 100],-34.830,22.090,128.90,14.020,0.920,6.700,6.070
+Carrefour,Consommation / Distribution,très faible,[50 – 100],-8.316,87.050,776.68,27.890,0.580,16.500,15.880
+Crédit Agricole,Banque / Assurance / Services financiers,moyen,[100 – 150],30.117,25.330,1518.88,7.260,1.170,17.700,315.570
+Danone,Consommation / Distribution,élevé,[100 – 150],-14.361,27.370,329.05,25.670,0.410,12.500,14.220
+Dassault Systèmes,Technologies / Télécommunication,élevé,< 50,-19.349,6.210,436.40,34.340,0.590,12.800,3.060
+Edenred,Services,très faible,< 50,-37.827,2.610,200.16,10.370,0.530,13.000,4.540
+ENGIE,Energie / Pétrole / Gaz,moyen,< 50,27.712,73.810,1444.87,9.220,0.670,22.800,52.000
+EssilorLuxottica,Santé / Pharmaceutique,élevé,< 50,31.900,26.510,149.66,54.910,0.760,12.900,13.210
+Eurofins Scientific,Santé / Pharmaceutique,très faible,< 50,9.792,6.950,100.74,27.710,0.700,17.600,3.610
+Hermès Intl,Luxe,très élevé,[150 – 200],-4.583,15.170,17.050,50.630,0.820,12.400,2.170
+Kering,Luxe,moyen,[50 – 100],13.437,17.190,100.81,50.140,1.180,9.700,40.660
+L’Oréal,Luxe,très élevé,[100 – 150],-6.683,43.490,102.54,32.970,0.850,16.600,199.990
+Legrand,Industrie / Construction / Matériaux,faible,[100 – 150],38.905,8.649,130.10,30.960,0.860,13.700,5.080
+LVMH,Luxe,très élevé,< 50,-22.531,84.680,148.17,25.140,1.010,12.200,305.300
+Michelin,Automobile,faible,[100 – 150],-12.818,27.190,390.48,14.260,0.870,10.300,7.360
+Orange,Technologies / Télécommunication,faible,< 50,43.257,40.260,1688.69,39.180,0.190,19.000,7.360
+Pernod-Ricard,Consommation / Distribution,moyen,[50 – 100],-35.421,10.950,153.08,13.060,0.480,17.400,13.610
+Publicis Groupe,Médias,moyen,[50 – 100],-13.575,16.030,147.32,12.300,0.810,9.100,5.170
+Renault,Automobile,faible,[100 – 150],-6.426,56.230,282.15,7.790,1.380,18.900,70.260
+Safran,Défense / Aéronautique,élevé,< 50,43.760,27.710,144.16,29.310,1.100,27.200,5.050
+Saint-Gobain,Industrie / Construction / Matériaux,élevé,> 200,12.910,46.570,265.69,16.780,1.180,18.600,17.830
+Sanofi,Santé / Pharmaceutique,élevé,< 50,-20.302,44.280,487.39,16.850,0.440,13.200,16.137
+Schneider Electric,Industrie / Construction / Matériaux,élevé,[150 – 200],2.401,38.150,248.15,31.040,0.940,7.100,14.830
+Société Générale,Banque / Assurance / Services financiers,faible,[150 – 200],158.009,25.260,741.05,9.500,1.260,13.200,181.490
+Stellantis Nv,Automobile,moyen,< 50,-30.844,156.900,887.34,3.210,1.140,21.400,37.220
+STMicroelectronics,Technologies / Télécommunication,faible,< 50,-9.140,12.810,713.22,61.890,1.290,11.100,3.040
+Téléperformance,Services,très faible,< 50,-28.615,10.280,69.02,7.930,0.630,12.200,4.900
+Thales,Défense / Aéronautique,moyen,< 50,90.293,20.580,79.17,53.350,0.560,26.500,7.820
+TotalEnergies,Energie / Pétrole / Gaz,élevé,[100 – 150],-6.419,188.800,1288.97,10.850,0.670,25.000,49.240
+Unibail Rodamco UN,Immobilier,très faible,[50 – 100],19.253,3.290,86.55,16.650,1.940,3.900,27.550
+Veolia Environnement,Services,faible,[150 – 200],2.693,46.300,517.21,18.940,1.080,21.600,19.960
+Vinci,Industrie / Construction / Matériaux,élevé,[100 – 150],17.118,72.770,256.84,14.190,0.930,23.800,36.260

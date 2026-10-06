@@ -1,0 +1,5 @@
+"model","QLIKE","RMSE_x1e4","DM_QLIKE_vs_HAR_log"
+"RW",0.1737,2.197,"-3.56***"
+"HAR_level",0.1524,2.039,"-2.26**"
+"HAR_log",0.1425,1.961,"benchmark"
+"HAR_log_MedRV",0.1681,2.308,"-5.66***"

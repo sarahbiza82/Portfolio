@@ -1,0 +1,3 @@
+industry,Chow F (2008-09),p-value,largest F in scan,at date,bootstrap 5% critical value,break detected,CUSUM p-value
+Food Products,7.59,0.0,10.34,1998-12,4.03,True,0.065
+Insurance,1.67,0.1263,18.37,1979-12,3.95,True,0.946

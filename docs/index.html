@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sarah Biza | Portfolio</title>
+<meta name="description" content="Econometrics and statistics projects: monetary policy and equity returns, forecasting, asset pricing, missing data, SQL, Dash and Power BI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bowlby+One&family=Cormorant+Garamond:wght@400;500&family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f0eb;--ink:#1d1d1b;--red:#b32a1e;--mute:#55524d;--line:#d9d3c9;--card:#faf8f4}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.65 Montserrat,system-ui,"Segoe UI",sans-serif}
+a{color:var(--red);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+section{padding:64px 0 28px;border-top:1px solid var(--line)}
+section.first{border-top:0;padding-top:40px}
+.head{display:grid;grid-template-columns:1fr auto;column-gap:24px;align-items:start;margin-bottom:22px}
+.big{font-family:"Bowlby One",Impact,sans-serif;color:var(--red);text-transform:uppercase;font-weight:400;line-height:.95;margin:0;font-size:clamp(2.3rem,7.5vw,5.2rem);overflow-wrap:anywhere}
+.thin{font-family:"Cormorant Garamond",Georgia,serif;text-transform:uppercase;font-weight:400;font-size:clamp(1.25rem,3.2vw,2.1rem);line-height:1.1;margin:6px 0 0;grid-column:1}
+.num{font-family:Anton,Impact,sans-serif;font-size:clamp(2.4rem,6vw,4.2rem);line-height:1;grid-row:1 / span 2;grid-column:2}
+.intro{font-style:italic;color:var(--mute);max-width:760px;margin:0 0 26px}
+.toc{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin:8px 0 0;padding:0;list-style:none}
+.toc a{display:block;border-left:3px solid var(--red);padding:4px 0 4px 12px;color:var(--ink)}
+.toc b{display:block;font-family:Anton,Impact,sans-serif;font-weight:400;font-size:1.5rem;letter-spacing:.02em;color:var(--red);line-height:1.1}
+.toc span{font-weight:600;text-transform:uppercase;letter-spacing:.06em;font-size:.82rem}
+.toc small{display:block;color:var(--mute);font-size:.82rem}
+.proj{background:var(--card);border:1px solid var(--line);padding:24px;margin:0 0 24px}
+.proj h3{font-family:Anton,Impact,sans-serif;font-weight:400;font-size:1.45rem;letter-spacing:.02em;line-height:1.2;margin:0 0 4px;text-transform:uppercase}
+.proj h3 a{color:var(--ink)}
+.cat{font-family:"Cormorant Garamond",Georgia,serif;text-transform:uppercase;font-size:1.05rem;letter-spacing:.04em;margin:0 0 2px;color:var(--mute)}
+.kind{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--red);font-weight:600;margin:0 0 16px}
+dl{display:grid;grid-template-columns:110px minmax(0,1fr);gap:10px 18px;margin:0}
+dt{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--red);font-weight:600;padding-top:3px}
+dd{margin:0}
+dd.res{font-weight:600}
+dd ol{margin:0;padding-left:18px}
+dd li{margin-bottom:4px}
+figure{margin:22px 0 0}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:0 18px}
+figure img{width:100%;height:auto;display:block;border:1px solid var(--line);background:#fff}
+figcaption,.cap{font-size:.8rem;font-style:italic;color:var(--mute);margin:6px 0 0}
+pre{margin:22px 0 0;background:#fff;border:1px solid var(--line);padding:14px;overflow-x:auto;font:12.5px/1.5 Consolas,Menlo,monospace}
+table{border-collapse:collapse;margin:12px 0 0;font-size:.88rem;background:#fff}
+th,td{border:1px solid var(--line);padding:6px 12px;text-align:right}
+th{background:var(--red);color:#fff;font-weight:600;text-transform:uppercase;font-size:.72rem;letter-spacing:.08em}
+td:first-child,th:first-child{text-align:left}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin:0;padding:0;list-style:none;counter-reset:s}
+.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);padding:16px}
+.steps li::before{content:"0" counter(s);font-family:Anton,Impact,sans-serif;color:var(--red);font-size:1.5rem;display:block;line-height:1}
+.steps b{display:block;margin:6px 0 2px;text-transform:uppercase;font-size:.8rem;letter-spacing:.08em}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+.cols h4{margin:0 0 4px;text-transform:uppercase;font-size:.8rem;letter-spacing:.08em;color:var(--red)}
+.cols p{margin:0}
+.contact{display:flex;gap:28px;flex-wrap:wrap;align-items:center}
+.contact p{margin:0;font-style:italic;max-width:460px}
+.contact ul{list-style:none;margin:0;padding:0 0 0 24px;border-left:1px solid var(--red);font-style:italic;font-weight:600}
+footer{padding:26px 0 40px;color:var(--mute);font-size:.8rem;font-style:italic}
+@media (max-width:640px){dl{grid-template-columns:minmax(0,1fr);gap:2px}dt{margin-top:10px}section{padding-top:44px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<section class="first" id="top">
+  <div class="head"><h1 class="big">Portfolio</h1><div class="num">01</div><p class="thin">Sarah Biza</p></div>
+  <ul class="toc">
+    <li><a href="#about"><b>02</b><span>About me</span><small>Studies and internship search</small></a></li>
+    <li><a href="#approach"><b>03</b><span>My approach</span><small>Four rules for empirical work</small></a></li>
+    <li><a href="#projects"><b>04</b><span>Analyses</span><small>Thesis, forecasting, asset pricing, statistics, SQL</small></a></li>
+    <li><a href="#dataviz"><b>05</b><span>Dashboards</span><small>Visualisation tools: Dash, Power BI</small></a></li>
+    <li><a href="#contact"><b>06</b><span>Contact</span><small>Internship from March 2027</small></a></li>
+  </ul>
+</section>
+
+<section id="about">
+  <div class="head"><h2 class="big">About</h2><div class="num">02</div><p class="thin">Me</p></div>
+  <div class="cols">
+    <div><h4>Studies</h4><p>I am in the second year of the master's degree in Econometrics and Statistics, applied econometrics track (M2 ECAP), at IAE Nantes.</p></div>
+    <div><h4>What the programme covers</h4><p>A two-year programme in economics, econometrics, statistics and computing. Courses include time series and forecasting, macro and financial econometrics, panel and spatial econometrics, public policy evaluation, credit-risk scoring, biostatistics, machine learning and text mining. Software: R, Python, SQL, Power BI, R Shiny, Stata and QGIS.</p></div>
+    <div><h4>What I am looking for</h4><p>A six-month end-of-studies internship starting in March 2027 (three months minimum), in econometrics, statistics, data analysis or finance.</p></div>
+  </div>
+</section>
+
+<section id="approach">
+  <div class="head"><h2 class="big">My approach</h2><div class="num">03</div><p class="thin">To empirical work</p></div>
+  <p class="intro">Every project on this page follows the same four rules. Each project card then gives the question, the data, the method, the result and the limits, and ends with the figure that shows the main result.</p>
+  <ol class="steps">
+    <li><b>Out of sample</b>A forecast is judged on data the model has not seen, with expanding or rolling windows.</li>
+    <li><b>Simple benchmarks</b>Each model is compared with a random walk, a mean or an autoregression, and the difference is tested.</li>
+    <li><b>Negative results stay</b>When a model does not beat its benchmark, the page says so.</li>
+    <li><b>Reproducible</b>Data downloads are scripted, seeds are fixed, and notebooks keep their outputs.</li>
+  </ol>
+</section>
+
+<section id="projects">
+  <div class="head"><h2 class="big">Analyses</h2><div class="num">04</div><p class="thin">Econometrics, forecasting, statistics and SQL</p></div>
+  <p class="intro">Twelve studies in Python, R and SQL, from the master's thesis to course projects. Each one answers a question with data. They are listed together, and the line under each title gives the field.</p>
+
+  <article class="proj">
+    <h3 data-path="thesis_monetary_policy">Impact of Fed and ECB monetary policy on financial returns</h3>
+    <p class="cat">Master's thesis · monetary policy and markets</p>
+    <p class="kind">Python · OLS with robust errors · rolling windows · high-frequency shocks · Dash</p>
+    <dl>
+      <dt>Question</dt><dd>To what extent do ECB and Fed decisions influence the returns of French and US equity markets?</dd>
+      <dt>Data</dt><dd>297 months, April 2000 to December 2024. Returns of the CAC 40, S&amp;P 500 and Nasdaq 100, nine CAC 40 sectors and four stocks (LVMH, BNP Paribas, Microsoft, Apple). Policy rates, 10-year yields, regime and QE dummies, with inflation, unemployment, the USD/EUR rate, VIX and oil as controls.</dd>
+      <dt>Method</dt><dd>Five nested OLS models per index with robust errors, 84-month rolling windows, the same model for sectors and stocks, then regressions on announcement surprises split into a policy shock and an information shock. Diagnostic tests at the 10% level.</dd>
+      <dt>Results</dt><dd class="res"><ol>
+        <li>A one-point rise in the ECB rate, two months earlier, lowers the monthly return by 1.4 points for the CAC 40, 0.8 for the S&amp;P 500 and 0.9 for the Nasdaq 100.</li>
+        <li>The Fed rate in level has no negative effect.</li>
+        <li>Long rates act in opposite directions: rising French yields lower the CAC 40 (-1.3 points per standard deviation) and rising US yields raise it (+1.9 points).</li>
+        <li>The VIX is the most stable driver (0.14 to 0.17 point for a 1% rise). A 1% depreciation of the dollar goes with +0.23 point for the CAC 40, +0.40 for the S&amp;P 500 and +0.56 for the Nasdaq 100.</li>
+        <li>The ECB rate is significantly negative for 11 of 13 sectors and stocks, strongest for autos (-2.2 points).</li>
+        <li>In rolling windows the ECB effect is negative and significant in 95% of the windows ending between 2007 and 2015. Later it can only be estimated when the rate moves.</li>
+        <li>Announcement surprises: each market reacts first to its own central bank. The Fed shock also lowers the CAC 40 (-0.5%), and the ECB shock does not significantly move US indices.</li>
+      </ol></dd>
+      <dt>Limits</dt><dd>At 10%, residuals are not normal, their variance is not constant, and serial correlation remains for the CAC 40, so all results use robust errors. The coefficients are conditional correlations, not causal effects. Monthly data dilute the reaction to an announcement.</dd>
+    </dl>
+    <figure><img src="img/thesis_ecb_rate.png" alt="Effect of a one-point rise in the ECB policy rate on three indices, nine sectors and four stocks" loading="lazy"><figcaption>Main result: effect of a one-point rise in the ECB policy rate on the monthly return of each index, sector and stock. Red bars are significant at 10%.</figcaption></figure>
+    <figure><img src="img/thesis_sectors.png" alt="Response of French sectors and four stocks to ECB and Fed policy shocks" loading="lazy"><figcaption>Extension: monthly return after an ECB or a Fed policy surprise.</figcaption></figure>
+  </article>
+
+  <article class="proj">
+    <h3 data-path="macro_econometrie/01_inflation_forecasting_oos.ipynb">US inflation forecasting</h3>
+    <p class="cat">Forecasting</p>
+    <p class="kind">Forecasting · machine learning · Diebold-Mariano tests</p>
+    <dl>
+      <dt>Question</dt><dd>Do macro predictors and machine-learning models beat a simple autoregression for US inflation?</dd>
+      <dt>Data</dt><dd>Twelve monthly FRED series. Forecasts from 2001 to 2026 at horizons of 1, 3, 6 and 12 months.</dd>
+      <dt>Method</dt><dd>Direct forecasts on an expanding window with an AR, a Phillips curve, ridge, lasso and a random forest. Hyper-parameters are tuned again every January on past data only.</dd>
+      <dt>Result</dt><dd class="res">Before 2020 the random forest has a 9 to 19% lower RMSE than the AR at 3 to 12 months. Most of that gain comes from 2008-2009, and outside those two years it does not beat a 12-month average. After 2020 no model clearly beats the AR.</dd>
+      <dt>Limits</dt><dd>The data are the latest vintage, not what a forecaster saw in real time.</dd>
+    </dl>
+    <figure><img src="img/01_relative_rmse.png" alt="RMSE relative to AR by horizon and model, before 2020 and after 2020" loading="lazy"><figcaption>RMSE of each model relative to the AR. Below 1 is better.</figcaption></figure>
+  </article>
+
+  <article class="proj">
+    <h3 data-path="macro_econometrie/02_monetary_shocks_local_projections.ipynb">Monetary policy and information shocks</h3>
+    <p class="cat">Monetary policy</p>
+    <p class="kind">Identification · local projections · Fed and ECB</p>
+    <dl>
+      <dt>Question</dt><dd>What do Fed and ECB announcements do to output, prices and stocks once a policy surprise is separated from an information surprise?</dd>
+      <dt>Data</dt><dd>High-frequency shocks of Jarocinski and Karadi, from 1990 for the Fed and 1999 for the ECB, with monthly output, prices, yields and stock indices.</dd>
+      <dt>Method</dt><dd>Local projections over 36 months with 68% and 90% bands, and a check without the 2009-2015 period.</dd>
+      <dt>Result</dt><dd class="res">On impact a Fed policy shock lowers US stocks by 1.1% and an ECB one lowers euro-area industrial production by 0.5%. Price responses to the policy shock are not distinguishable from zero.</dd>
+      <dt>Limits</dt><dd>The shocks are estimated series. The euro-area stock index starts in 2007, so its longer responses are not interpreted.</dd>
+    </dl>
+    <figure><img src="img/02_irf_ecb.png" alt="Impulse responses to ECB monetary policy and information shocks" loading="lazy"><figcaption>Responses to ECB policy shocks (top) and information shocks (bottom).</figcaption></figure>
+  </article>
+
+  <article class="proj">
+    <h3 data-path="macro_econometrie/03_nelson_siegel_forecasting.ipynb">Nelson-Siegel and the yield curve</h3>
+    <p class="cat">Yield curve and forecasting</p>
+    <p class="kind">Term structure · forecasting · recession signal</p>
+    <dl>
+      <dt>Question</dt><dd>Do three yield-curve factors forecast yields better than a random walk, and does the slope announce recessions?</dd>
+      <dt>Data</dt><dd>Nine US Treasury maturities, monthly, 1994 to 2026. NBER recession dates.</dd>
+      <dt>Method</dt><dd>Diebold-Li factors, direct AR and VAR forecasts of the factors from 2005, and a logit of recessions on the slope twelve months earlier, evaluated out of sample.</dd>
+      <dt>Result</dt><dd class="res">The curve is fitted closely, but over the full test sample no factor model beats a random walk. From 2020 the factor VAR has lower errors for the 3-month yield, on a short sample that is not tested. The slope signal has an out-of-sample AUC of about 0.5.</dd>
+      <dt>Limits</dt><dd>The sample has three recessions, and the 2022-2024 inversion was not followed by one.</dd>
+    </dl>
+    <figure><img src="img/03_forecast_rmse.png" alt="RMSE of yield forecasts relative to a random walk, 2005-2019 and from 2020" loading="lazy"><figcaption>RMSE of yield forecasts relative to a random walk, by sub-period.</figcaption></figure>
+  </article>
+
+  <article class="proj">
+    <h3 data-path="macro_econometrie/04_oat_bund_spread.ipynb">OAT-Bund spread: fundamentals or politics?</h3>
+    <p class="cat">Sovereign spreads and politics</p>
+    <p class="kind">ARDL bounds test · event study · France</p>
+    <dl>
+      <dt>Question</dt><dd>How much of the French spread over Germany follows debt, and how did it react on political dates?</dd>
+      <dt>Data</dt><dd>Daily French and German 10-year yields, 2004 to 2026, and a monthly panel from 2013 to 2025 with debt, political uncertainty, VIX and the Italian spread.</dd>
+      <dt>Method</dt><dd>Error-correction model with a bounds test, an event study of two-day moves around six political dates, and local projections on an uncertainty shock.</dd>
+      <dt>Result</dt><dd class="res">No cointegration is found, so no long-run claim is made. The 2024 dissolution moved the spread by +15 bp in two days (z = 8.8). The censure and confidence votes themselves were already priced in.</dd>
+      <dt>Limits</dt><dd>Six events only. The two yield series are not the same instrument, so the level of the spread is approximate.</dd>
+    </dl>
+    <figure><img src="img/04_events.png" alt="French-German 10-year spread around six political dates" loading="lazy"><figcaption>The spread three weeks before and after each political date.</figcaption></figure>
+  </article>
+
+  <article class="proj">
+    <h3 data-path="macro_econometrie/05_gdp_nowcasting_france.ipynb">Nowcasting French GDP</h3>
+    <p class="cat">Nowcasting</p>
+    <p class="kind">Nowcasting · bridge equations · factor model</p>
+    <dl>
+      <dt>Question</dt><dd>Can monthly surveys predict the current quarter's GDP growth before it is published?</dd>
+      <dt>Data</dt><dd>Eurostat GDP growth and five monthly indicators for France. 63 quarters are nowcast from 2010.</dd>
+      <dt>Method</dt><dd>Three information sets per quarter, missing months filled by AR(1) projections, then bridge equations, ridge and a one-factor model.</dd>
+      <dt>Result</dt><dd class="res">Without the COVID quarters the models beat an AR(1) by 6 to 12%, but they are only 0 to 5% better than the historical mean, and adding months 2 and 3 changes almost nothing.</dd>
+      <dt>Limits</dt><dd>Latest data vintages. Industrial production and PMIs are not in the free data used here.</dd>
+    </dl>
+    <figure><img src="img/05_nowcast.png" alt="Nowcast versus actual GDP growth, and RMSE by information set" loading="lazy"><figcaption>Nowcast against actual growth, and errors by month of the quarter.</figcaption></figure>
+  </article>
+
+  <article class="proj">
+    <h3 data-path="eaf_factor_models">Factor models: Food and Insurance</h3>
+    <p class="cat">Asset pricing</p>
+    <p class="kind">Python · Fama-French · Newey-West coded from the formulas · structural breaks</p>
+    <dl>
+      <dt>Question</dt><dd>Which risk factors are two US industry portfolios exposed to, are the exposures stable, and did either earn an abnormal return?</dd>
+      <dt>Data</dt><dd>Kenneth French industry portfolios and the five Fama-French factors, 748 months from July 1963 to October 2025.</dd>
+      <dt>Method</dt><dd>CAPM, three-factor and five-factor regressions with OLS and Newey-West errors written from the matrix formulas, 60-month rolling loadings, a scan over break dates with a bootstrap critical value, and the GRS test.</dd>
+      <dt>Result</dt><dd class="res">No abnormal return in any model. Both industries have a structural break, at different dates. A test at 2008 alone finds none for Insurance.</dd>
+      <dt>Limits</dt><dd>Two portfolios and standard factors only. The GRS test assumes normal residuals, which the data reject.</dd>
+    </dl>
+    <figure><img src="img/rolling_loadings.png" alt="Five-factor loadings in 60-month rolling windows for Food and Insurance" loading="lazy"><figcaption>Factor loadings in 60-month windows with 95% bands.</figcaption></figure>
+  </article>
+
+  <article class="proj">
+    <h3 data-path="r_forecast_evaluation">Forecast evaluation: returns and volatility</h3>
+    <p class="cat">Forecast evaluation</p>
+    <p class="kind">R · Diebold-Mariano · HAR · QLIKE</p>
+    <dl>
+      <dt>Question</dt><dd>Can an autoregression predict wheat futures returns, and which HAR model forecasts KOSPI 200 volatility best?</dd>
+      <dt>Data</dt><dd>Daily wheat futures (3,153 forecasts, 2010 to 2022) and KOSPI 200 realised variance (1,433 forecasts, 2007 to 2012).</dd>
+      <dt>Method</dt><dd>Rolling and expanding windows, zero, mean and persistence benchmarks, Diebold-Mariano and Mincer-Zarnowitz tests, the Sharpe ratio of a sign strategy, and QLIKE for volatility.</dd>
+      <dt>Result</dt><dd class="res">No model beats a zero forecast for returns. For volatility, the HAR in logs significantly beats the random walk, and jump-robust regressors make forecasts worse.</dd>
+      <dt>Limits</dt><dd>Sign strategies ignore transaction costs. The KOSPI sample ends in 2012.</dd>
+    </dl>
+    <figure><img src="img/har_forecast.png" alt="KOSPI 200 realised volatility and one-day-ahead HAR forecast" loading="lazy"><figcaption>Realised volatility and the one-day-ahead HAR forecast.</figcaption></figure>
+  </article>
+
+  <article class="proj">
+    <h3 data-path="r_inflation_france">Forecasting French inflation</h3>
+    <p class="cat">Forecasting</p>
+    <p class="kind">R · direct forecasts · lasso · Diebold-Mariano</p>
+    <dl>
+      <dt>Question</dt><dd>Do oil, energy prices, the exchange rate and the 10-year yield improve inflation forecasts compared with an autoregression?</dd>
+      <dt>Data</dt><dd>241 months, January 2004 to January 2024.</dd>
+      <dt>Method</dt><dd>Direct forecasts at 1, 3, 6 and 12 months on an expanding window from 2012, with an AR, an AR with predictors, a lasso and a combination.</dd>
+      <dt>Result</dt><dd class="res">The predictors do not beat an AR when only past information is used. If their future values were known, the same model would gain 6 to 29%.</dd>
+      <dt>Limits</dt><dd>Final-vintage data. Outlier correction is not included.</dd>
+    </dl>
+    <figure><img src="img/r_inflation_h12.png" alt="French inflation: 12-month-ahead forecasts and realised value" loading="lazy"><figcaption>Forecasts made 12 months ahead and the realised value.</figcaption></figure>
+  </article>
+
+  <article class="proj">
+    <h3 data-path="r_missing_data">Imputing missing data</h3>
+    <p class="cat">Statistics</p>
+    <p class="kind">R · simulation · MICE · Rubin's rules · group project</p>
+    <dl>
+      <dt>Question</dt><dd>On a small financial dataset, which imputation method recovers missing values best, and what does multiple imputation add?</dd>
+      <dt>Data</dt><dd>The 40 firms of the CAC 40 with seven quantitative variables.</dd>
+      <dt>Method</dt><dd>15% of the cells are deleted and imputed 300 times under two missingness mechanisms, with mean, median, PCA and two MICE methods.</dd>
+      <dt>Result</dt><dd class="res">No method beats mean imputation with 40 firms. Listwise deletion inflates standard errors by 40 to 50%, and pooling over 20 imputations brings them back close to the complete-data values.</dd>
+      <dt>Limits</dt><dd>One dataset of 40 rows. The result describes this setting, not imputation in general.</dd>
+    </dl>
+    <figure><img src="img/imputation_error.png" alt="Imputation error over 300 random deletions by method and mechanism" loading="lazy"><figcaption>Error on imputed cells over 300 deletions. 1.0 is no better than the mean.</figcaption></figure>
+  </article>
+
+  <article class="proj">
+    <h3 data-path="r_pls_air_quality">PCR, PLS and OLS for air quality</h3>
+    <p class="cat">Statistics</p>
+    <p class="kind">R · latent-variable regression · chronological validation · group project</p>
+    <dl>
+      <dt>Question</dt><dd>With strongly correlated predictors, do PCR and PLS predict fine particles better than OLS?</dd>
+      <dt>Data</dt><dd>31,692 hourly observations at a Beijing station, March 2013 to February 2017.</dd>
+      <dt>Method</dt><dd>Training on 2013-2015 and test on 2016-2017, components chosen by blocked cross-validation, with OLS and a previous-hour forecast as benchmarks.</dd>
+      <dt>Result</dt><dd class="res">PLS matches OLS with half the components but is not more accurate. A random split of hours flatters every model by 3 to 7%, and nothing beats the previous hour's value.</dd>
+      <dt>Limits</dt><dd>One station. Hours with missing values are dropped.</dd>
+    </dl>
+    <figure><img src="img/pls_components.png" alt="Test error by number of components for PCR and PLS" loading="lazy"><figcaption>Test error by number of components. The dashed line is OLS.</figcaption></figure>
+  </article>
+
+  <article class="proj">
+    <h3 data-path="sql_macro">SQL for macro and market data</h3>
+    <p class="cat">Databases</p>
+    <p class="kind">SQLite · window functions · CTEs</p>
+    <dl>
+      <dt>What it is</dt><dd>A database built from public macro and market series, and six analytical queries.</dd>
+      <dt>What it shows</dt><dd class="res">Of 56 month-ends with an inverted US yield curve, 32.1% were followed by a recession within a year, against 12.9% of the other months. The SQL event study gives the same spread moves as the Python notebook.</dd>
+      <dt>Limits</dt><dd>The sample covers three recessions.</dd>
+    </dl>
+<pre>-- How often does an inverted yield curve precede a recession within 12 months?
+WITH month_end AS (
+    SELECT MAX(date) AS date FROM us_yields_daily GROUP BY substr(date, 1, 7)
+), curve AS (
+    SELECT substr(y.date, 1, 7) AS ym, y.y_10y - y.y_3m AS slope
+    FROM us_yields_daily y JOIN month_end m ON y.date = m.date
+), rec AS (
+    SELECT substr(month, 1, 7) AS ym,
+           MAX(recession) OVER (ORDER BY month ROWS BETWEEN 1 FOLLOWING AND 12 FOLLOWING) AS rec_next_12m
+    FROM us_monthly
+)
+SELECT CASE WHEN slope &lt; 0 THEN 'inverted' ELSE 'normal' END AS curve_state,
+       COUNT(*) AS months,
+       ROUND(100.0 * SUM(rec_next_12m) / COUNT(*), 1) AS pct_followed
+FROM curve JOIN rec USING (ym)
+WHERE rec_next_12m IS NOT NULL
+GROUP BY curve_state;</pre>
+    <table>
+      <tr><th>Curve state</th><th>Months</th><th>Followed by a recession</th></tr>
+      <tr><td>Inverted</td><td>56</td><td>32.1%</td></tr>
+      <tr><td>Normal</td><td>334</td><td>12.9%</td></tr>
+    </table>
+    <p class="cap">One of the six queries, shortened by one column, and its result.</p>
+  </article>
+</section>
+
+<section id="dataviz">
+  <div class="head"><h2 class="big">Dashboards</h2><div class="num">05</div><p class="thin">Visualisation tools</p></div>
+  <p class="intro">Two interactive tools that let a reader explore results: a Dash application and a Power BI report.</p>
+
+  <article class="proj">
+    <h3 data-path="thesis_monetary_policy/dashboard.py">Thesis dashboard</h3>
+    <p class="kind">Dash · Plotly</p>
+    <dl>
+      <dt>What it is</dt><dd>An interactive application on the thesis results. The user chooses an index, one of the five models and the rolling coefficients to display.</dd>
+      <dt>What it shows</dt><dd class="res">The three most significant variables of the chosen model, every effect with its 95% interval, and the 84-month rolling coefficients with their band.</dd>
+      <dt>Limits</dt><dd>It runs locally and is not hosted online.</dd>
+    </dl>
+    <figure><img src="img/dash_thesis.png" alt="Thesis dashboard: selectors, three indicator cards, coefficient chart and rolling-window chart" loading="lazy"><figcaption>The dashboard for the CAC 40 and the full model.</figcaption></figure>
+  </article>
+
+  <article class="proj">
+    <h3 data-path="powerbi_skyport">SkyPort airport dashboard</h3>
+    <p class="kind">Power BI · group project</p>
+    <dl>
+      <dt>What it is</dt><dd>A five-page report for an airport operator: a home page and four analysis pages with filters by year, airline, flight type and terminal.</dd>
+      <dt>What it shows</dt><dd class="res">Activity and commercial revenue, delays and costs, passenger experience, and a risk index that ranks airlines.</dd>
+      <dt>Limits</dt><dd>Course data. The pages are shown as screenshots.</dd>
+    </dl>
+    <div class="grid2">
+      <figure><img src="img/powerbi_overview.png" alt="Overview page of the SkyPort dashboard" loading="lazy"><figcaption>1. Overview: passengers, flights, revenue and its sources.</figcaption></figure>
+      <figure><img src="img/powerbi_performance.png" alt="Airport performance page of the SkyPort dashboard" loading="lazy"><figcaption>2. Airport performance: delays, punctuality, cancellations and costs.</figcaption></figure>
+      <figure><img src="img/powerbi_customer.png" alt="Customer experience page of the SkyPort dashboard" loading="lazy"><figcaption>3. Customer experience: ratings, complaints and waiting time.</figcaption></figure>
+      <figure><img src="img/powerbi_decisions.png" alt="Decisions page of the SkyPort dashboard" loading="lazy"><figcaption>4. Decisions: risk index and alerts by airline.</figcaption></figure>
+    </div>
+  </article>
+</section>
+
+<section id="contact">
+  <div class="head"><h2 class="big">Contact</h2><div class="num">06</div><p class="thin">And conclusion</p></div>
+  <div class="contact">
+    <p>I am looking for a six-month end-of-studies internship from March 2027 (three months minimum). I am open to roles in econometrics, statistics, data analysis and finance.</p>
+    <ul>
+      <li><a href="mailto:sarahbiza82@gmail.com">sarahbiza82@gmail.com</a></li>
+      <li id="repo-line" hidden><a id="repo-link" href="#">Repository</a></li>
+    </ul>
+  </div>
+</section>
+
+<footer>Data: FRED, ECB, Eurostat, Banque de France, Bundesbank, Yahoo Finance, Kenneth French data library, Jarocinski-Karadi shocks.</footer>
+</div>
+<script>
+// Address of the GitHub repository, for example "https://github.com/USER/portfolio". While it is empty, project titles are plain text.
+const REPO = "https://github.com/sarahbiza82/Portfolio";
+if (REPO) {
+  document.querySelectorAll("[data-path]").forEach(function (el) {
+    const path = el.dataset.path, link = document.createElement("a");
+    link.href = REPO + (path.includes(".") ? "/blob/main/" : "/tree/main/") + path;
+    link.textContent = el.textContent;
+    el.textContent = ""; el.appendChild(link);
+  });
+  document.getElementById("repo-link").href = REPO;
+  document.getElementById("repo-line").hidden = false;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+split,predictors,model,components,test_RMSE,test_R2
+"chronological (train 2013-2015, test 2016-2017)",without PM10,OLS,8,0.564,0.7584
+"chronological (train 2013-2015, test 2016-2017)",without PM10,PCR,5,0.5803,0.7442
+"chronological (train 2013-2015, test 2016-2017)",without PM10,PLS,4,0.5653,0.7573
+"chronological (train 2013-2015, test 2016-2017)",without PM10,Persistence,NA,0.3596,0.9018
+random hours,without PM10,OLS,8,0.5379,0.7647
+random hours,without PM10,PCR,6,0.5388,0.7639
+random hours,without PM10,PLS,4,0.539,0.7638
+random hours,without PM10,Persistence,NA,0.3249,0.9142
+"chronological (train 2013-2015, test 2016-2017)",with PM10,OLS,9,0.3817,0.8894
+"chronological (train 2013-2015, test 2016-2017)",with PM10,PCR,9,0.3817,0.8894
+"chronological (train 2013-2015, test 2016-2017)",with PM10,PLS,5,0.3789,0.891
+"chronological (train 2013-2015, test 2016-2017)",with PM10,Persistence,NA,0.3596,0.9018
+random hours,with PM10,OLS,9,0.3674,0.8903
+random hours,with PM10,PCR,9,0.3674,0.8903
+random hours,with PM10,PLS,5,0.3683,0.8897
+random hours,with PM10,Persistence,NA,0.3249,0.9142

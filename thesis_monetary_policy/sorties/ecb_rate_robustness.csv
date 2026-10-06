@@ -1,0 +1,13 @@
+index,ECB rate,coefficient (points),p (HC3)
+CAC 40,"level, no lag",-1.47,0.0
+CAC 40,"level, lag 1",-1.42,0.0
+CAC 40,"level, lag 2 (published)",-1.37,0.0
+CAC 40,first difference,3.67,0.046
+S&P 500,"level, no lag",-0.94,0.003
+S&P 500,"level, lag 1",-0.84,0.006
+S&P 500,"level, lag 2 (published)",-0.81,0.005
+S&P 500,first difference,0.44,0.812
+Nasdaq 100,"level, no lag",-1.07,0.022
+Nasdaq 100,"level, lag 1",-1.02,0.025
+Nasdaq 100,"level, lag 2 (published)",-0.86,0.051
+Nasdaq 100,first difference,2.23,0.462

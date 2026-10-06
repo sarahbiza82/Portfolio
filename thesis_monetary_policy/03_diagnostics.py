@@ -7,7 +7,10 @@ For each index, the full model (model 5, excess returns) is estimated by OLS and
 It also compares classical, HC3 and HAC standard errors for the policy-rate coefficients, and runs two
 unit-root tests with opposite null hypotheses (ADF: unit root, KPSS: stationarity) on the regressors kept in level.
 
-Output: sorties/diagnostics.csv, sorties/standard_errors.csv, sorties/unit_root_tests.csv
+A last table checks that the ECB-rate result does not depend on the two-month lag, and shows what the first
+difference of the rate gives.
+
+Output: sorties/diagnostics.csv, sorties/standard_errors.csv, sorties/unit_root_tests.csv, sorties/ecb_rate_robustness.csv
 """
 import warnings
 from pathlib import Path
@@ -65,3 +68,16 @@ with warnings.catch_warnings():
                         "KPSS statistic": round(k[0], 2), "KPSS p (H0: stationarity)": verdict(k[1])})
 U = pd.DataFrame(ur_rows); U.to_csv(HERE / "sorties" / "unit_root_tests.csv", index=False)
 print("\nUnit-root tests on the regressors kept in level\n", U.to_string(index=False))
+
+# robustness of the ECB-rate coefficient: level with no lag, one lag, two lags (published), and first difference (HC3 errors)
+VERSIONS = [("level, no lag", "policy_rate_ECB"), ("level, lag 1", "policy_rate_ECB_lag1"), ("level, lag 2 (published)", "policy_rate_ECB_lag2"),
+            ("first difference", "d_policy_rate_ECB")]
+rb_rows = []
+for label, y in TARGETS.items():
+    for name, col in VERSIONS:
+        cols = [col if c == "policy_rate_ECB_lag2" else c for c in FULL]
+        f = sm.OLS(df[y], sm.add_constant(df[cols])).fit(cov_type="HC3")
+        rb_rows.append({"index": label, "ECB rate": name, "coefficient (points)": round(100 * f.params[col], 2), "p (HC3)": round(f.pvalues[col], 3)})
+R = pd.DataFrame(rb_rows); R.to_csv(HERE / "sorties" / "ecb_rate_robustness.csv", index=False)
+moves = int((df["d_policy_rate_ECB"] != 0).sum())
+print(f"\nECB-rate coefficient by version of the rate (the rate changes in {moves} of {len(df)} months)\n", R.to_string(index=False))

@@ -57,6 +57,8 @@ Each market reacts first to its own central bank. Spillovers are asymmetric: the
 
 Tested at the 10% level on the full models, residuals are not normal for any index, variance is not constant, ARCH effects are present everywhere, serial correlation remains for the CAC 40 and the functional form is rejected for the Nasdaq 100. Multicollinearity is low (largest VIF 4.2) and no observation is influential. For the three regressors kept in level (the two policy rates and the US unemployment rate), ADF rejects a unit root and KPSS rejects stationarity: these persistent series weaken inference.
 
+The result does not depend on the two-month lag. With no lag, one lag and two lags, the ECB-rate coefficient is -1.47, -1.42 and -1.37 points for the CAC 40, -0.94, -0.84 and -0.81 for the S&P 500, and -1.07, -1.02 and -0.86 for the Nasdaq 100. Lagging the rate does not change its persistence: the unit-root tests give the same reading for the three versions. The first difference of the rate is not used: the rate changes in 51 of 297 months, an announced change is expected by markets, and its coefficient is negative for no index (`sorties/ecb_rate_robustness.csv`). Announcement surprises measure the reaction to a decision.
+
 Heteroskedasticity, serial correlation and non-normal errors leave OLS coefficients consistent but make classical standard errors unreliable, so all results use robust errors. The main result survives: the ECB rate is significant at 5% for the CAC 40 and S&P 500 under HC3 and HAC errors, and at about 5% for the Nasdaq 100 (p = 0.05 with HC3, 0.03 with HAC). For the Nasdaq 100 the RESET rejection means the linear form is an approximation.
 
 OLS measures conditional correlations, not causal effects: the policy rate reacts to the economy and to markets, and the VIX and the change in long yields, observed in the same month, react to the same news. Average coefficients over 25 years hide different regimes, and monthly data dilute the reaction to an announcement.
@@ -65,7 +67,7 @@ OLS measures conditional correlations, not causal effects: the policy rate react
 
 - `01_baseline_regressions.py`: five nested models for the indices, sectors and stocks, and the figure of the ECB rate effect.
 - `02_rolling_and_shocks.py`: rolling windows, shock regressions, sectors and stocks.
-- `03_diagnostics.py`: tests at the 10% level, unit-root tests on the regressors kept in level, and comparison of classical, HC3 and HAC standard errors.
+- `03_diagnostics.py`: tests at the 10% level, unit-root tests on the regressors kept in level, comparison of classical, HC3 and HAC standard errors, and robustness of the ECB-rate coefficient to the lag.
 - `dashboard.py`: interactive Dash application on the results (`python dashboard.py`, needs `dash` and `dash-bootstrap-components`).
 - `build_adjusted_returns.py`: stock and sector returns from adjusted prices. `data/data_monthly.csv` is the dataset the scripts use.
 - `data/`: monthly dataset and shock series; `sorties/`: all tables.

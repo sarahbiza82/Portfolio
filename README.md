@@ -39,7 +39,7 @@ Twelve studies in Python, R and SQL, from the master's thesis to course projects
 - In rolling windows the ECB effect is negative and significant in 95% of the windows ending between 2007 and 2015. Later it can only be estimated when the rate moves.
 - Announcement surprises: each market reacts first to its own central bank. The Fed shock also lowers the CAC 40, and the ECB shock does not significantly move US indices.
 
-Several OLS assumptions are rejected at 10%, so all results use robust errors.
+Several OLS assumptions are rejected at 10%, so all results use robust errors. The ECB-rate result does not depend on the two-month lag.
 
 ### Other analyses
 

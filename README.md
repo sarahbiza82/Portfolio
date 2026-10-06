@@ -1,4 +1,4 @@
-# Sarah Biza: portfolio
+# Sarah Biza: Portfolio
 
 Contact: sarahbiza82@gmail.com
 

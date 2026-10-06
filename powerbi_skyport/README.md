@@ -4,7 +4,7 @@ Business-intelligence project, *Power BI* course (M1 ECAP), group project. Inter
 
 **Brief.** An airport operator wants to follow activity and commercial revenue, understand operational performance (delays, cancellations, costs), measure passenger experience, and identify which airlines and customers are at risk.
 
-**Data.** Operational and commercial tables on flights, passengers, revenues, costs, airlines and dates. The analysis pages have slicers for year, airline, flight type and terminal, and buttons to move between pages.
+**Data.** The dataset is fictitious and was generated with AI: SkyPort is not a real airport. It contains operational and commercial tables on flights, passengers, revenues, costs, airlines and dates. The analysis pages have slicers for year, airline, flight type and terminal, and buttons to move between pages.
 
 ## Pages
 

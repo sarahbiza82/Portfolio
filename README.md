@@ -1,5 +1,7 @@
 # Sarah Biza: Portfolio
 
+Site: https://sarahbiza82.github.io/Portfolio/
+
 Contact: sarahbiza82@gmail.com
 
 ## About me
@@ -62,7 +64,7 @@ The five notebooks on public data have a common page: [macro_econometrie/](macro
 | Tool | Piece | What it shows |
 |---|---|---|
 | Dash, Plotly | [Thesis dashboard](thesis_monetary_policy/dashboard.py) | Choose an index and a model, see the effects with their 95% intervals and the 84-month rolling coefficients. It runs locally. |
-| Power BI | [SkyPort airport dashboard](powerbi_skyport/) (group project) | Five-page report: activity and commercial revenue, delays and costs, passenger experience, and a risk index by airline. |
+| Power BI | [SkyPort airport dashboard](powerbi_skyport/) (group project) | Five-page report on a fictitious dataset generated with AI: activity and commercial revenue, delays and costs, passenger experience, and a risk index by airline. |
 
 ## Reproducibility
 
